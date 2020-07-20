@@ -1,0 +1,67 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                <img src="{{ "/assets/img/client-1.png" | relative_url }}" class="mx-auto d-block">
+            </div>
+            <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                <img src="{{ "/assets/img/client-2.png" | relative_url }}" class="mx-auto d-block">
+            </div>
+            <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                <img src="{{ "/assets/img/client-3.png" | relative_url }}" class="mx-auto d-block">
+            </div>
+            <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                <img src="{{ "/assets/img/client-4.png" | relative_url }}" class="mx-auto d-block">
+            </div>
+            <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                <img src="{{ "/assets/img/client-5.png" | relative_url }}" class="mx-auto d-block">
+            </div>
+            <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                <img src="{{ "/assets/img/client-6.png" | relative_url }}" class="mx-auto d-block">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- contact -->
+  <div class="jumbotron jumbotron-fluid" id="contact" style="background-image: url({{ "/assets/img/contact-bk.jpg" | relative_url }});">
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-12 text-white text-center">
+                <h2 class="font-weight-bold">Highwood Design Limited</h2>
+                <p class="my-4">
+                    Design Works, William Street
+                    <br>NE10 0JP, United Kingdom.
+                </p>
+                <ul class="list-unstyled">
+                    <li>Company Registration Number<br /><a rel="company" href="https://beta.companieshouse.gov.uk/company/07251920">07251920</a></li>
+                    <li>VAT Registration Number<br /><a rel="vat" href="https://ec.europa.eu/taxation_customs/vies/">GB 992584761</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid" id="copyright">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                Privacy
+            </div>
+            <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                <a href="#" class="d-inline-block text-center ml-2">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+                {%- if site.facebook_username -%}
+                <a href="#" class="d-inline-block text-center ml-2">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                {%- endif -%}
+                {%- if site.linkedin_username -%}
+                <a href="#" class="d-inline-block text-center ml-2">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                {%- endif -%}
+            </div>
+        </div>
+    </div>
+</div>
