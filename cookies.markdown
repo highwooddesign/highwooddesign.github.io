@@ -39,4 +39,4 @@ You can learn more about cookies on the following third-party websites:
 
 * [All About Cookies](http://www.allaboutcookies.org/)
 * [Cookies, the GDPR, and the ePrivacy Directive](https://gdpr.eu/cookies/)
-* [IOC - About Cookies](https://ico.org.uk/your-data-matters/online/cookies/)
+* [IOC: About Cookies](https://ico.org.uk/your-data-matters/online/cookies/)
