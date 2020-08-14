@@ -877,45 +877,6 @@ nav.light ul li ul:before {
 	background-size: cover
 }
 
-.mouse {
-	position: absolute;
-	right: 40px;
-	bottom: 40px;
-	width: 25px;
-	height: 36px;
-	margin-left: -12px;
-	cursor: pointer;
-	transition: border-color 0.2s ease-in;
-	border: 2px solid #888;
-	border: 2px solid rgba(255, 255, 255, 0.27);
-	border-radius: 15px
-}
-
-.mouse .scroll {
-	display: block;
-	width: 3px;
-	height: 6px;
-	margin: 6px auto;
-	-webkit-animation-name: scroll;
-	animation-name: scroll;
-	-webkit-animation-duration: 2s;
-	animation-duration: 2s;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-	border-radius: 4px;
-	background: #b0b1b1
-}
-
-.mouse:hover {
-	border: 2px solid rgba(255, 255, 255, 0.4)
-}
-
-@media (max-width: 560px) {
-	.mouse {
-		visibility: hidden
-	}
-}
-
 .cover .posttitle {
 	position: relative
 }
@@ -1369,9 +1330,7 @@ body.error404 .mouse {
 	right: 0;
 	padding: 20px;
 	cursor: pointer;
-	color: #000 svg;
-	color-width: 22px;
-	color-height: 22px
+	color: #000;
 }
 
 @media (max-width: 420px) {
@@ -3299,3 +3258,81 @@ body.page-template footer.main {
 body.page-template footer.postinfo {
 	display: none !important
 }
+
+
+
+
+
+
+
+
+
+
+
+.mouse {
+	position: absolute;
+	right: 40px;
+	bottom: 40px;
+	width: 30px;
+	height: 50px;
+	margin-left: -12px;
+	cursor: pointer;
+	transition: border-color 0.2s ease-in;
+	border: 2px solid #b0b1b1;
+	border: 2px solid rgba(255, 255, 255, 0.27);
+	border-radius: 15px;
+	overflow: hidden;
+	z-index: 100;
+}
+
+.mouse .arrow{
+	position: absolute;
+	pointer-events: none;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%,-50%);
+}
+.mouse .arrow span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.27);
+    border-right: 2px solid rgba(255, 255, 255, 0.27);
+    transform: rotate(45deg);
+    margin: -10px 0;
+    animation: animate 3s infinite;
+}
+.mouse .arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.mouse .arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+.mouse:hover {
+	border: 3px solid rgba(255, 255, 255, 0.4)
+}
+
+@media (max-width: 560px) {
+	.mouse {
+		visibility: hidden
+	}
+}
+
+
+
+
+
